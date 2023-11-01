@@ -1,0 +1,276 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header_main {
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    margin: 0;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 30px;
+    margin-left: 20px;
+
+}
+
+.rotate-on-hover{
+    animation: spin 5s linear infinite; /* Добавляем анимацию вращения */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg); /* Вращение на 360 градусов */
+    }
+}
+
+
+.search-container {
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 20px;
+    max-width: 300px;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+
+}
+
+.search-input {
+    border: none;
+    padding: 10px;
+    flex-grow: 1;
+    outline: none;
+}
+
+.search-button {
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-button:hover{
+    background-color: darkgrey;
+}
+
+.current_location{
+    margin-right: 50px;
+    color: #fff;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.current_location_box{
+    display: flex;
+    justify-content: flex-end;
+}
+.current-weather {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.main_data{
+    text-align: center;
+}
+
+.main_data button{
+    color: #cccccc;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.main_data button:hover{
+    border: 2px solid #cccccc;
+}
+
+.card {
+    text-align: center;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #cccccc;
+    height: 200px;
+    flex: 1;
+    transition: .3s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    flex: 2;
+    background-color: #EAEAEA;
+}
+
+
+.row {
+    display: flex; /* Располагаем элементы в ряд */
+    justify-content: center;
+    color: white;
+}
+
+.item {
+    padding: 10px;
+    margin-right: 10px;
+    border-bottom: 2px solid transparent;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.item:hover{
+    border-bottom: 2px solid white;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+
+}
+
+h2, p {
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.moreDetails {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #cccccc;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.moreDetails:hover {
+    background-color: darkgrey;
+}
+
+.properties{
+    font-weight: bold;
+}
+
+.footer {
+    font-family: Verdana, serif;
+    background-color: #cccccc;
+    border-radius: 75px 75px 0 0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer_main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer_text {
+    text-align: left;
+    font-family: Verdana, serif;
+    padding: 20px;
+    margin: 10px;
+}
+
+.footer_heading {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 300px;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+#footer-input {
+    border: white;
+    background-color: #cccccc;
+    color: white;
+    padding: 10px;
+    flex-grow: 1;
+    outline: none;
+}
+
+.footer_container:hover{
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+}
+
+#footer-button {
+    background-color: white;
+    color: #cccccc;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+#footer-button:hover {
+    background-color: #EAEAEA;
+}
+.footer_pages{
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer_pages:hover{
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+}
+
+.fa-temperature-half,
+.fa-cloud,
+.fa-wind,
+.fa-arrow-right,
+.fa-cloud-rain,
+.fa-droplet,
+.fa-eye,
+.fa-hurricane,
+.fa-map{
+    color: #cccccc;
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+
+
+
+

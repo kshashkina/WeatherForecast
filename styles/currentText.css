@@ -1,0 +1,81 @@
+.main_data{
+color: black;
+}
+.header_sunny{
+color: #947b8d
+}
+.header_clear{
+color: 	#02090b
+}
+.header_partly_cloudy{
+color: #5d7ec2
+}
+
+.header_cloudy{
+color: #6b5755
+}
+
+.header_overcast{
+color: #516170
+}
+
+.header_mist{
+color: #56545d
+}
+
+.header_patchy_rain_possible{
+color: #e2a859
+}
+
+.header_patchy_snow_possible{
+color: #4b474c
+}
+
+.header_patchy_sleet_possible{
+color: #525543
+}
+
+.header_patchy_freezing_drizzle_possible{
+color: #423f3d
+}
+
+.header_thundery_outbreaks_possible{
+color: #150e51
+}
+
+.header_blowing_snow{
+    color: #676a9a;
+}
+
+.header_blizzard{
+    color: #5d5d60;
+}
+
+.header_drizzle{
+color: #3a2819
+}
+
+.header_light_rain{
+color: #576414
+}
+
+.header_moderate_rain{
+color: #3d5e72
+}
+
+.header_heavy_rain{
+color: #56545d
+}
+
+.header_light_snow{
+color: #896b4a
+}
+
+.header_snow_shower{
+color: #565a69
+}
+
+.header_hail{
+color: #586e69
+}
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Майвезер - Прогноз погоды</title>
+    <link rel="stylesheet" href="styles/main_page.css">
+    <link rel="stylesheet" href="styles/headerChanger.css">
+    <link rel="stylesheet" href="styles/currentText.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"/>
+</head>
+<body>
+<header class="header" id="background_header">
+    <div class="header_main">
+        <a href="index.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+            <h1 class="header-title"><i class="fas fa-sun rotate-on-hover" style="color: #ffffff;"></i> MyWeather</h1>
+        </a>
+        <div class="search-container">
+            <input type="text" id="locationInput" class="search-input" placeholder="Write location">
+            <button onclick="searchWeather()" class="search-button">Search</button>
+        </div>
+    </div>
+    <div class="current_location_box">
+        <p class="current_location" style="visibility: hidden"; id="current_location"></p>
+    </div>
+    <div class="row">
+        <a href="current.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+            <div class="item">Current</div>
+        </a>
+        <a href="forecast.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+            <div class="item">Forecast</div>
+        </a>
+    </div>
+</header>
+<div class="main_data" id="main-data">
+    <h1>3-Days Forecast</h1>
+    <p id="day"></p>
+    <button id="tomorrow">Today</button>
+    <button id="2days">Tomorrow</button>
+    <button id="3days">The day after tomorrow</button>
+    <br><br>
+</div>
+<div class="current-weather">
+    <div class="card">
+        <p>Maximum temperature <br><span id="max_temperature" class="properties"></span><br> </p>
+    </div>
+    <div class="card">
+        <p>Minimum temperature<br><span id="min_temperature" class="properties"></span> <br></p>
+    </div>
+    <div class="card">
+        <p>Average temperature <br><span id="average_temperature" class="properties"></span> <br> </p>
+    </div>
+    <div class="card">
+        <p>Condition <br><span id="condition" class="properties"></span>  <br> </p>
+    </div>
+    <div class="card">
+        <p>Max wind speed <br><span id="wind_speed" class="properties"></span> <br> </p>
+    </div>
+</div>
+<br>
+<div>
+    <div class="current-weather">
+        <div class="card">
+            <p>Total precipitation <br><span id="precipitation" class="properties"></span></p>
+        </div>
+        <div class="card">
+            <p>Average humidity <br><span id="humidity" class="properties"></span> </p>
+        </div>
+        <div class="card">
+            <p>Average Visibility <br><span id="vis_km" class="properties"></span></p>
+        </div>
+        <div class="card">
+            <p>Chance of rain <br><span id="chance_of_rain" class="properties"></span> </p>
+        </div>
+        <div class="card">
+            <p>UV<br><span id="uv" class="properties"></span></p>
+        </div>
+    </div>
+</div>
+<br>
+<div class="main_data">
+    <h1>Astro Forecast</h1>
+</div>
+<div class="current-weather">
+    <div class="card">
+        <p>Sunrise <br><span id="sunrise" class="properties"></span> </p>
+    </div>
+    <div class="card">
+        <p>Sunset <br><span id="sunset" class="properties"></span> </p>
+    </div>
+    <div class="card">
+        <p>Moonrise <br><span id="moonrise" class="properties"></span> </p>
+    </div>
+    <div class="card">
+        <p>Moonset <br><span id="moonset" class="properties"></span> </p>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer_main">
+        <div class="footer_text">
+            <p class="footer_heading">Weather from all around the world!</p>
+            <p>&copy; 2023 MyWeather.   <span>Privacy Policy</span></p>
+        </div>
+        <div class="footer_text">
+            <p class="footer_heading">Pages</p>
+            <a href="index.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+                <p class="footer_pages" >Home</p>
+            </a>
+            <a href="current.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+                <p class="footer_pages">Current</p>
+            </a>
+            <a href="forecast.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+                <p class="footer_pages">Forecast</p>
+            </a>
+
+        </div>
+        <div class="footer_text">
+            <p class="footer_heading">Keep up to date!</p>
+            <div class="footer_container">
+                <input type="text" id="footer-input" placeholder="Email">
+                <button type="submit" id="footer-button">Submit</button>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="scripts/forecast.js"></script>
+
+
+</body>

@@ -1,0 +1,105 @@
+.header{
+    background-color: grey;
+    border-radius: 0 0 75px 75px;
+}
+
+.weather_sunny,
+.weather_clear,
+.weather_partly_cloudy,
+.weather_cloudy,
+.weather_overcast,
+.weather_mist,
+.weather_patchy_rain_possible,
+.weather_patchy_snow_possible,
+.weather_patchy_sleet_possible,
+.weather_patchy_freezing_drizzle_possible,
+.weather_thundery_outbreaks_possible,
+.weather_blowing_snow,
+.weather_blizzard,
+.weather_drizzle,
+.weather_light_rain,
+.weather_moderate_rain,
+.weather_heavy_rain,
+.weather_light_snow,
+.weather_snow_shower,
+.weather_hail{
+    background-size: cover;
+    background-position: center;
+}
+.weather_sunny{
+    background-image: url("../assets/images/sunny.jpg");
+}
+.weather_clear{
+    background-image: url("../assets/images/clear.jpg");
+}
+.weather_partly_cloudy{
+    background-image: url("../assets/images/patly_cloudy.jpg");
+}
+
+.weather_cloudy{
+    background-image: url("../assets/images/cloudy.jpg");
+}
+.weather_overcast{
+    background-image: url("../assets/images/overcast.jpg");
+}
+
+.weather_mist{
+    background-image: url("../assets/images/mist_fog.jpg");
+}
+
+.weather_patchy_rain_possible{
+    background-image: url("../assets/images/patchy_rain_possible.jpg");
+}
+
+.weather_patchy_snow_possible{
+    background-image: url("../assets/images/patchy_snow_possible.jpg");
+}
+
+.weather_patchy_sleet_possible{
+    background-image: url("../assets/images/patchy_sleet_possible.jpg");
+}
+
+.weather_patchy_freezing_drizzle_possible{
+    background-image: url("../assets/images/patchy_freezing_drizzle_possible.jpg");
+}
+
+.weather_thundery_outbreaks_possible{
+    background-image: url("../assets/images/thundery_outbreaks_possible.jpg");
+}
+
+.weather_blowing_snow{
+    background-image: url("../assets/images/blowing_snow.jpg");
+}
+
+.weather_blizzard{
+    background-image: url("../assets/images/blizzard.jpg");
+}
+
+.weather_drizzle{
+    background-image: url("../assets/images/drizzle.jpg");
+}
+
+.weather_light_rain{
+    background-image: url("../assets/images/light_rain.jpg");
+}
+
+.weather_moderate_rain{
+    background-image: url("../assets/images/moderate_rain.jpg");
+}
+
+.weather_heavy_rain{
+    background-image: url("../assets/images/heavy_rain.jpg");
+}
+
+.weather_light_snow{
+    background-image: url("../assets/images/light_snow.jpg");
+}
+
+.weather_snow_shower{
+    background-image: url("../assets/images/snow_shower.jpg");
+}
+
+.weather_hail{
+    background-image: url("../assets/images/hail.jpg");
+}
+

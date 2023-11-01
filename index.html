@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWeather</title>
+    <link rel="stylesheet" href="styles/main_page.css">
+    <link rel="stylesheet" href="styles/headerChanger.css">
+    <link rel="stylesheet" href="styles/currentText.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"/>
+</head>
+<body>
+<header class="header" id="background_header">
+    <div class="header_main">
+        <a href="index.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+        <h1 class="header-title"><i class="fas fa-sun rotate-on-hover" style="color: #ffffff;"></i> MyWeather</h1>
+        </a>
+        <div class="search-container">
+            <input type="text" id="locationInput" class="search-input" placeholder="Write location">
+            <button onclick="searchWeather()" class="search-button">Search</button>
+        </div>
+    </div>
+    <div class="current_location_box">
+        <p class="current_location" style="visibility: hidden"; id="current_location"></p>
+    </div>
+    <div class="row">
+        <a href="current.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+        <div class="item">Current</div>
+        </a>
+        <a href="forecast.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+        <div class="item">Forecast</div>
+        </a>
+    </div>
+</header>
+
+<div class="main_data" id="main-data">
+    <h1>Current Weather</h1>
+    <p>Local Time</p>
+    <p id="currentTime"></p>
+</div>
+<div class="current-weather">
+    <div class="card">
+        <p>Temperature <br><span id="temperature" class="properties"></span>°C <br> <i class="fa-solid fa-temperature-half"></i></p>
+    </div>
+    <div class="card">
+        <p>Feels like <br><span id="feels_like" class="properties"></span>°C <br> <i class="fa-solid fa-temperature-half"></i></p>
+    </div>
+    <div class="card">
+        <p>Weather Condition <br><span id="condition" class="properties"></span> <br> <i class="fa-solid fa-cloud" ></i></p>
+    </div>
+    <div class="card">
+        <p>Wind <br><span id="wind_direction" class="properties"></span> <span id="wind_speed" class="properties"></span> km/h <br> <i class="fa-solid fa-wind"></i></p>
+    </div>
+    <div class="card">
+        <p>Wind Gusts <br><span id="wind_gusts" class="properties"></span> km/h <br> <i class="fa-solid fa-wind"></i></p>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer_main">
+        <div class="footer_text">
+            <p class="footer_heading">Weather from all around the world!</p>
+            <p>&copy; 2023 MyWeather.   <span>Privacy Policy</span></p>
+        </div>
+        <div class="footer_text">
+            <p class="footer_heading">Pages</p>
+            <a href="index.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+                <p class="footer_pages" >Home</p>
+            </a>
+            <a href="current.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+                <p class="footer_pages">Current</p>
+            </a>
+            <a href="forecast.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+                <p class="footer_pages">Forecast</p>
+            </a>
+        </div>
+        <div class="footer_text">
+            <p class="footer_heading">Keep up to date!</p>
+            <div class="footer_container">
+                <input type="text" id="footer-input" placeholder="Email">
+                <button type="submit" id="footer-button">Submit</button>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<script type="module" src="scripts/home.mjs"></script>
+</body>
+</html>
