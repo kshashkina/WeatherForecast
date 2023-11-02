@@ -58,7 +58,7 @@ function searchWeather(locationString, date) {
         location = locationString;
     }
     const apiKey = '1003cf71e24041cd81d165317230710';
-    const apiUrl = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=4&aqi=no&alerts=no`;
+    const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=4&aqi=no&alerts=no`;
 
     fetch(apiUrl)
         .then(response => response.json())
@@ -284,6 +284,10 @@ function searchWeather(locationString, date) {
             console.error('Error:', error);
         });
 }
+
+function getLocalDay(){
+
+}
 function getFutureDate(daysToAdd) {
     const currentDate = new Date();
     currentDate.setDate(currentDate.getDate() + daysToAdd);
@@ -305,3 +309,4 @@ function getTheDateAfterTomorrowDate() {
     return getFutureDate(2);
 }
 
+module.exports = { getTodayDate, getTomorrowDate, getTheDateAfterTomorrowDate}

@@ -37,7 +37,7 @@ function searchWeather(inputLocation, date) {
     }
 
     const apiKey = '1003cf71e24041cd81d165317230710';
-    const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=no`;
+    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=no`;
 
     fetch(apiUrl)
         .then(response => response.json())

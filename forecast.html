@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Майвезер - Прогноз погоды</title>
+    <title>MyWeather</title>
     <link rel="stylesheet" href="styles/main_page.css">
     <link rel="stylesheet" href="styles/headerChanger.css">
     <link rel="stylesheet" href="styles/currentText.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"/>
+    <link rel="icon" type="image/x-icon" href="assets/images/sun.png">
+
 </head>
 <body>
 <header class="header" id="background_header">
@@ -24,6 +26,9 @@
         <p class="current_location" style="visibility: hidden"; id="current_location"></p>
     </div>
     <div class="row">
+        <a href="index.html" style="text-decoration: none; color: inherit; cursor: pointer;">
+            <div class="item">Home</div>
+        </a>
         <a href="current.html" style="text-decoration: none; color: inherit; cursor: pointer;">
             <div class="item">Current</div>
         </a>
@@ -42,38 +47,38 @@
 </div>
 <div class="current-weather">
     <div class="card">
-        <p>Maximum temperature <br><span id="max_temperature" class="properties"></span><br> </p>
+        <p>Maximum temperature <br><span id="max_temperature" class="properties"></span><br>  <i class="fa-solid fa-temperature-full"></i> </p>
     </div>
     <div class="card">
-        <p>Minimum temperature<br><span id="min_temperature" class="properties"></span> <br></p>
+        <p>Minimum temperature<br><span id="min_temperature" class="properties"></span> <br> <i class="fa-solid fa-temperature-empty"></i></p>
     </div>
     <div class="card">
-        <p>Average temperature <br><span id="average_temperature" class="properties"></span> <br> </p>
+        <p>Average temperature <br><span id="average_temperature" class="properties"></span> <br> <i class="fa-solid fa-temperature-half"></i> </p>
     </div>
     <div class="card">
-        <p>Condition <br><span id="condition" class="properties"></span>  <br> </p>
+        <p>Condition <br><span id="condition" class="properties"></span>  <br> <i class="fa-solid fa-cloud" ></i> </p>
     </div>
     <div class="card">
-        <p>Max wind speed <br><span id="wind_speed" class="properties"></span> <br> </p>
+        <p>Max wind speed <br><span id="wind_speed" class="properties"></span> <br>  <i class="fa-solid fa-wind"></i> </p>
     </div>
 </div>
 <br>
 <div>
     <div class="current-weather">
         <div class="card">
-            <p>Total precipitation <br><span id="precipitation" class="properties"></span></p>
+            <p>Total precipitation <br><span id="precipitation" class="properties"></span> <br> <i class="fa-solid fa-cloud-rain"></i></p>
         </div>
         <div class="card">
-            <p>Average humidity <br><span id="humidity" class="properties"></span> </p>
+            <p>Average humidity <br><span id="humidity" class="properties"></span>  <br> <i class="fa-solid fa-droplet"></i></p>
         </div>
         <div class="card">
-            <p>Average Visibility <br><span id="vis_km" class="properties"></span></p>
+            <p>Average Visibility <br><span id="vis_km" class="properties"></span><br> <i class="fa-regular fa-eye"></i> </p>
         </div>
         <div class="card">
-            <p>Chance of rain <br><span id="chance_of_rain" class="properties"></span> </p>
+            <p>Chance of rain <br><span id="chance_of_rain" class="properties"></span> <br> <i class="fa-solid fa-cloud-rain"></i> </p>
         </div>
         <div class="card">
-            <p>UV<br><span id="uv" class="properties"></span></p>
+            <p>UV<br><span id="uv" class="properties"></span> <br> <i class="fa-regular fa-map"></i></p>
         </div>
     </div>
 </div>
@@ -83,16 +88,16 @@
 </div>
 <div class="current-weather">
     <div class="card">
-        <p>Sunrise <br><span id="sunrise" class="properties"></span> </p>
+        <p>Sunrise <br><span id="sunrise" class="properties"></span> <br> <i class="fa-regular fa-sun"></i> </p>
     </div>
     <div class="card">
-        <p>Sunset <br><span id="sunset" class="properties"></span> </p>
+        <p>Sunset <br><span id="sunset" class="properties"></span> <br> <i class="fa-regular fa-sun"></i></p>
     </div>
     <div class="card">
-        <p>Moonrise <br><span id="moonrise" class="properties"></span> </p>
+        <p>Moonrise <br><span id="moonrise" class="properties"></span> <br> <i class="fa-regular fa-moon"></i></p>
     </div>
     <div class="card">
-        <p>Moonset <br><span id="moonset" class="properties"></span> </p>
+        <p>Moonset <br><span id="moonset" class="properties"></span> <br> <i class="fa-regular fa-moon"></i></p>
     </div>
 </div>
 <footer class="footer">
